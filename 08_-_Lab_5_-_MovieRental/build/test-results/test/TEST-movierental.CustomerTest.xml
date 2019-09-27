@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="movierental.CustomerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-09-27T10:29:45" hostname="CI00037730" time="0.063">
+  <properties/>
+  <testcase name="statementForRegularMovie" classname="movierental.CustomerTest" time="0.012"/>
+  <testcase name="statementForManyMovies" classname="movierental.CustomerTest" time="0.003"/>
+  <testcase name="testGetName" classname="movierental.CustomerTest" time="0.001"/>
+  <testcase name="statementForChildrensMovie" classname="movierental.CustomerTest" time="0.003"/>
+  <testcase name="testAddRental" classname="movierental.CustomerTest" time="0.007"/>
+  <testcase name="statementForNewReleaseMovie" classname="movierental.CustomerTest" time="0.003"/>
+  <testcase name="testCustomer" classname="movierental.CustomerTest" time="0.0"/>
+  <testcase name="statementForAdultMovie" classname="movierental.CustomerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

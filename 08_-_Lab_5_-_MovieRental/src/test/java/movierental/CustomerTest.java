@@ -3,9 +3,6 @@ import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 import static movierental.MovieFactory.*;
 
-import movierental.priceclass.Childrens;
-import movierental.priceclass.NewRelease;
-import movierental.priceclass.Regular;
 import org.junit.Test;
 
 public class CustomerTest {
@@ -43,7 +40,7 @@ public class CustomerTest {
 							"\tGone with the Wind\t3.5" + System.lineSeparator() + "" +
 							"Amount owed is 3.5" + System.lineSeparator() + "" +
 							"You earned 1 frequent renter points";
-		String statement = customer2.învoice();
+		String statement = customer2.invoice();
 		assertEquals(expected, statement);
 	}
 	
@@ -60,7 +57,7 @@ public class CustomerTest {
 							"\tStar Wars\t9.0" + System.lineSeparator() + "" +
 							"Amount owed is 9.0" + System.lineSeparator() + "" +
 							"You earned 2 frequent renter points";
-		String statement = customer2.învoice();
+		String statement = customer2.invoice();
 		assertEquals(expected, statement);
 	}
 	
@@ -77,7 +74,7 @@ public class CustomerTest {
 							"\tMadagascar\t1.5" + System.lineSeparator() + "" +
 							"Amount owed is 1.5" + System.lineSeparator() + "" +
 							"You earned 1 frequent renter points";
-		String statement = customer2.învoice();
+		String statement = customer2.invoice();
 		assertEquals(expected, statement);
 	}
 
@@ -94,7 +91,7 @@ public class CustomerTest {
 				"\tBackstreet sloeries V\t25.0" + System.lineSeparator() + "" +
 				"Amount owed is 25.0" + System.lineSeparator() + "" +
 				"You earned 1 frequent renter points";
-		String statement = customer2.învoice();
+		String statement = customer2.invoice();
 		assertEquals(expected, statement);
 	}
 	
@@ -117,7 +114,7 @@ public class CustomerTest {
 							"\tGone with the Wind\t11.0" + System.lineSeparator() + "" +
 							"Amount owed is 23.0" + System.lineSeparator() + "" +
 							"You earned 4 frequent renter points";
-		String statement = customer1.învoice();
+		String statement = customer1.invoice();
 		assertEquals(expected, statement);
 	}
 }
