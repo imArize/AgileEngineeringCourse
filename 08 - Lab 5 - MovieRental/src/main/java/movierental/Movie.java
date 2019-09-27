@@ -1,29 +1,26 @@
 package movierental;
 
+import movierental.priceclass.PriceClass;
+
 public class Movie {
 
-	public static final int CHILDRENS = 2;
-	public static final int NEW_RELEASE = 1;
-	public static final int REGULAR = 0;
-	
-	private String _title;
-	private int _priceCode;
-	
-	public Movie(String title, int priceCode) {
-		_title = title;
-		_priceCode = priceCode;
-	}
-	
-	public int getPriceCode() {
-		return _priceCode;
-	}
+  private String title;
+  private PriceClass priceClass;
 
-	public void setPriceCode(int arg) {
-		_priceCode = arg;
-	}
-	public String getTitle() {
-		return _title;
-	}
-	
-	
+  public Movie(String title, PriceClass priceClass) {
+    this.title = title;
+    this.priceClass = priceClass;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  double costForMovie(int daysRented) {
+    return priceClass.calculateRentingCost(daysRented);
+  }
+
+  public PriceClass getPriceClass() {
+    return priceClass;
+  }
 }
